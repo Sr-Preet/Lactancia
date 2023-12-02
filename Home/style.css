@@ -29,7 +29,7 @@
     list-style-type: none;
   }
   .footerNav ul li a{
-    color: rgb(0, 0, 0);
+    color: #fff;
     margin: 20px;
     text-decoration: none;
     font-size: 1.3em;
@@ -52,5 +52,6 @@
 }
 body
 {
-    background-color: rgb(249, 247, 247);
+    /* background-color: rgb(249, 247, 247); */
+    background-color: white;
 }
