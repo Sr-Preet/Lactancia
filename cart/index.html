@@ -1,301 +1,202 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>productDetails</title>
-    <link rel="stylesheet" href="./style.css" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
-      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
-      crossorigin="anonymous"
-      referrerpolicy="no-referrer"
-    />
 
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@700&display=swap"
-      rel="stylesheet"
-    />
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>productDetails</title>
+  <link rel="stylesheet" href="./style.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
 
-    <style>
-      .btn-product {
-        background-color: #092a37;
-        color: white;
-      }
-      .btn-product:hover {
-        border: 1px solid #092a37;
-        color: #092a37;
-      }
-    </style>
-  </head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Lato:wght@700&display=swap"
+        rel="stylesheet">
+    
+        <style>
+          .btn-product{
+    background-color: #092a37;
+    color: white;
+}
+.btn-product:hover{
+    border: 1px solid #092a37;
+    color: #092a37;
+}
+        </style>
+        
+</head>
 
-  <body>
-    <nav
-      class="navbar navbar-expand-lg bg-body-tertiary bg-white"
-      style="height: 10vh; background-color: white; margin: 0"
-    >
-      <div
-        class=""
-        style="
-          background: white;
-          margin: 0;
-          display: flex;
-          justify-content: space-around;
-          width: 100%;
-          padding: 0 25px;
-        "
-      >
-        <a
-          class="navbar-brand"
-          style="
-            font-size: 50px;
-            font-family: 'Dancing Script', cursive;
-            color: #092a37;
-          "
-          href="../Home/index.html"
-          >Lactancia</a
-        >
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarText"
-          aria-controls="navbarText"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
+<body>
+  <nav class="navbar navbar-expand-lg bg-body-tertiary bg-white" style="height: 10vh;background-color: white;margin: 0;">
+
+    <div class="" style="background: white;margin: 0;display: flex;justify-content: space-around;width: 100%;padding: 0 25px;">
+        <a class="navbar-brand" style="font-size: 50px; font-family: 'Dancing Script', cursive;color: #092a37;" href="../Home/index.html">Lactancia</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
         </button>
-        <div
-          class="collapse navbar-collapse"
-          style="display: flex; justify-content: right"
-          id="navbarText"
-        >
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a
-                class="nav-link ps-5"
-                aria-current="page"
-                href="../Home/index.html"
-                >Home</a
-              >
-            </li>
-            <li class="nav-item">
-              <a
-                class="nav-link ps-5"
-                id="nav-products"
-                href="../category/index.html"
-              >
-                Categories</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-5" href="../Contact/index.html"
-                >Contact Us</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-5" href="../TermsOfService/index.html">
-                Terms</a
-              >
-            </li>
-            <li class="nav-item">
-              <a class="nav-link ps-5" href="../PrivacyPolicy/index.html"
-                >Privacy Policy</a
-              >
-            </li>
+        <div class="collapse navbar-collapse " style="display: flex;justify-content: right;" id="navbarText">
+            <ul class="navbar-nav  ">
+                <li class="nav-item">
+                    <a class="nav-link  ps-5" aria-current="page" href="../Home/index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link  ps-5" id="nav-products" href="../category/index.html">
+                        Categories</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-5" href="../Contact/index.html">Contact
+                        Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-5" href="../TermsOfService/index.html">
+                        Terms</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link ps-5" href="../PrivacyPolicy/index.html">Privacy Policy</a>
+                </li>
+                
+                <li class="nav-item">
+                    <a class="nav-link ps-5" style="color: #092a37;font-size: 18px;" href="../LoginPage/index.html"><i
+                            class="fa-solid fa-user-large"></i></a>
+                </li>
 
-            <li class="nav-item">
-              <a
-                class="nav-link ps-5"
-                style="color: #092a37; font-size: 18px"
-                href="../LoginPage/index.html"
-                ><i class="fa-solid fa-user-large"></i
-              ></a>
-            </li>
-          </ul>
+            </ul>
         </div>
-      </div>
-    </nav>
+    </div>
+</nav>
+  
 
-    <div
-      class="container p-5 bg-white"
-      style="
-        width: 80%;
-        margin: 10vh auto;
-        box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
-      "
-    >
-      <h5
-        class="text-center"
-        style="
-          font-family: 'Dancing Script', cursive;
-          color: #092a37;
-          font-size: 48px;
-        "
-      >
-        Cart
-      </h5>
-      <div class="row mt-5 mb-0 p-2" id="heading">
+  <div class="container p-5 bg-white" style="width: 80%; margin: 10vh auto;box-shadow: 0 5px 15px rgba(0,0,0,0.1);">
+    <h5 class="text-center" style="font-family: 'Dancing Script', cursive;color: #092a37;font-size: 48px;">Cart</h5>
+    <div class="row mt-5 mb-0  p-2"  id="heading">
+
         <div class="col-lg-2 text-center border">
-          <h5>Image</h5>
+            <h5>Image</h5>
         </div>
         <div class="col-lg-2 text-center border">
-          <h5>Product Name</h5>
+            <h5>Product Name</h5>
         </div>
         <div class="col-lg-2 text-center border">
-          <h5>Product Price</h5>
+            <h5>Product Price</h5>
         </div>
         <div class="col-lg-2 text-center border">
-          <h5>Product Quantity</h5>
+            <h5>Product Quantity</h5>
         </div>
         <div class="col-lg-2 text-center border">
-          <h5>Total</h5>
+            <h5>Total</h5>
         </div>
 
         <div class="col-lg-2 text-center border">
-          <h5>Action</h5>
+            <h5>Action</h5>
         </div>
-      </div>
-      <div id="cart-box" style="margin-top: 0"></div>
+        
+           
+            
+    </div>
+  <div id="cart-box" style="margin-top: 0;">
 
-      <h5
-        class="text-center mt-3"
-        style="font-family: 'Lato', sans-serif; color: #092a37"
-        id="total_amount"
-      ></h5>
-      <h5 class="text-center mt-3" id="cart-msg" style="display: none">
-        There is no product in the cart.
-      </h5>
-      <div class="mt-5 text-center">
-        <button class="btn-product btn" id="btn-checkout">
-          Proceed To Checkout
-        </button>
-      </div>
+  </div>
+
+  <h5 class="text-center mt-3" style=" font-family: 'Lato', sans-serif; color: #092a37;" id="total_amount"></h5>
+  <h5 class="text-center mt-3" id="cart-msg" style="display: none;">There is no product in the cart.</h5>
+    <div class="mt-5 text-center">
+        <button class="btn-product btn" id="btn-checkout" >Proceed To Checkout</button>
     </div>
 
-    <div
-      class="footer"
-      style="background-color: #092a37; color: white; padding: 20px"
-    >
-      <div class="socialIcon">
-        <a href="" style="background-color: white"
-          ><i class="fa-brands fa-facebook" target="_blank"></i
-        ></a>
-        <a
-          style="background-color: white"
-          href="https://www.instagram.com/"
-          target="_blank"
-          ><i class="fa-brands fa-instagram"></i
-        ></a>
-        <a style="background-color: white" href=""
-          ><i class="fa-brands fa-twitter" target="_blank"></i
-        ></a>
-        <a style="background-color: white" href=""
-          ><i class="fa-brands fa-whatsapp" target="_blank"></i
-        ></a>
-      </div>
-      <div class="footerNav">
+  </div>
+
+  <div class="footer" style="background-color: #092a37;color: white; padding: 20px;">
+    <div class="socialIcon">
+        <a href="" style="background-color: white;"><i class="fa-brands fa-facebook"  target="_blank"></i></a>
+        <a style="background-color: white;" href="https://www.instagram.com/" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+        <a style="background-color: white;" href=""><i class="fa-brands fa-twitter" target="_blank"></i></a>
+        <a style="background-color: white;" href=""><i class="fa-brands fa-whatsapp" target="_blank"></i></a>
+    </div>
+    <div class="footerNav">
         <ul>
-          <li><a href="../Contact/index.html">Contact Us</a></li>
-          <li><a href="../TermsOfService/index.html">Terms & Service</a></li>
-          <li><a href="../PrivacyPolicy/index.html">Privacy Policy</a></li>
-          <!--<li><a href="../Feedback/index.html">Feedback</a></li>-->
+            <li ><a href="../Contact/index.html">Contact Us</a></li>
+            <li><a href="../TermsOfService/index.html">Terms & Service</a></li>
+            <li><a href="../PrivacyPolicy/index.html">Privacy Policy</a></li>
+            <!--<li><a href="../Feedback/index.html">Feedback</a></li>-->
         </ul>
-      </div>
-      <div class="footerbottom">
-        <p>2023, Lactancia. All rights reserved</p>
-      </div>
     </div>
+    <div class="footerbottom">
+        <p>2023, Lactancia. All rights reserved</p>
+    </div>
+</div>
 
-    <script>
-      showToCart();
 
-      function removeCart(id) {
-        var storedData = JSON.parse(localStorage.getItem("new-cart"));
-        let newstoredData = [];
+<script>
+  showToCart();
 
-        if (storedData.length == 1) {
-          document.getElementById("cart-msg").style.display = "block";
-          document.getElementById("heading").style.display = "none";
-          document.getElementById("btn-checkout").style.display = "none";
-          document.getElementById("total_amount").style.display = "none";
-        }
+  function removeCart(id) {
+    var storedData = JSON.parse(localStorage.getItem("new-cart"));
+    let newstoredData = [];
 
-        storedData.map((product) => {
-          if (product.id == id) {
-            // Do nothing for the product to be removed
-          } else {
-            newstoredData.push(product);
-          }
-        });
+    if (storedData.length == 1) {
+      document.getElementById('cart-msg').style.display = "block";
+      document.getElementById('heading').style.display = "none";
+      document.getElementById('btn-checkout').style.display = "none";
+      document.getElementById('total_amount').style.display = "none";
+    }
 
-        localStorage.setItem("new-cart", JSON.stringify(newstoredData));
-        showToCart();
+    storedData.map((product) => {
+      if (product.id == id) {
+        // Do nothing for the product to be removed
+      } else {
+        newstoredData.push(product);
       }
+    });
 
-      function showToCart() {
-        var carthtml = "";
-        var total_amount = 0;
+    localStorage.setItem("new-cart", JSON.stringify(newstoredData));
+    showToCart();
+  }
 
-        var storedData = localStorage.getItem("new-cart");
+  function showToCart() {
+    var carthtml = '';
+    var total_amount = 0;
 
-        if (JSON.parse(storedData).length == 0) {
-          document.getElementById("cart-msg").style.display = "block";
-          document.getElementById("heading").style.display = "none";
-          document.getElementById("btn-checkout").style.display = "none";
-          document.getElementById("total_amount").style.display = "none";
-        }
+    var storedData = localStorage.getItem("new-cart");
 
-        if (storedData) {
-          var userData = JSON.parse(storedData);
-          userData.map((product) => {
-            carthtml +=
-              '<div class="row border m-0  p-2 d-flex align-items-center "><div class="col-lg-2 text-center">' +
-              ' <img src="' +
-              product.img +
-              '" style="width: 100px;height: 100px;object-fit: cover;" /></div>' +
-              '<div class="col-lg-2 text-center"><h5>' +
-              product.name +
-              '</h5></div><div class="col-lg-2 text-center"><p>CAD ' +
-              product.price +
-              "</p></div>" +
-              '<div class="col-lg-2 text-center"><p class="m-0"> ' +
-              product.quantity +
-              "</p></div>" +
-              '<div class="col-lg-2 text-center"><p class="m-0"> ' +
-              product.quantity * product.price +
-              "</p></div>" +
-              '<div class="col-lg-2 text-center "><a onclick="removeCart(' +
-              product.id +
-              ')" class="m-0" style=" font-family: \'Lato\', sans-serif;color:#092a37;cursor:pointer;">Remove</a></div></div>';
+    if (JSON.parse(storedData).length == 0) {
+      document.getElementById('cart-msg').style.display = "block";
+      document.getElementById('heading').style.display = "none";
+      document.getElementById('btn-checkout').style.display = "none";
+      document.getElementById('total_amount').style.display = "none";
+    }
 
-            total_amount += product.quantity * product.price;
-          });
-        } else {
-        }
+    if (storedData) {
+      var userData = JSON.parse(storedData);
+      userData.map((product) => {
+        carthtml += '<div class="row border m-0  p-2 d-flex align-items-center "><div class="col-lg-2 text-center">' +
+          ' <img src="' + product.img + '" style="width: 100px;height: 100px;object-fit: cover;" /></div>' +
+          '<div class="col-lg-2 text-center"><h5>' + product.name + '</h5></div><div class="col-lg-2 text-center"><p>CAD ' + product.price + '</p></div>' +
+          '<div class="col-lg-2 text-center"><p class="m-0"> ' + product.quantity + '</p></div>' +
+          '<div class="col-lg-2 text-center"><p class="m-0"> ' + (product.quantity * product.price) + '</p></div>' +
+          '<div class="col-lg-2 text-center "><a onclick="removeCart(' + product.id + ')" class="m-0" style=" font-family: \'Lato\', sans-serif;color:#092a37;cursor:pointer;">Remove</a></div></div>';
 
-        document.getElementById("cart-box").innerHTML = carthtml;
-        document.getElementById("total_amount").innerHTML =
-          "Total Amount " + total_amount;
-      }
+        total_amount += product.quantity * product.price;
+      });
+    } else {}
 
-      // Change here: Use a loop to add event listener to all elements with the "btn" class
-      const buttonHandlers = document.getElementsByClassName("btn");
-      for (let i = 0; i < buttonHandlers.length; i++) {
-        buttonHandlers[i].addEventListener("click", () => {
-          window.location.href = "../sample/index.html";
-        });
-      }
-    </script>
-  </body>
+    document.getElementById('cart-box').innerHTML = carthtml;
+    document.getElementById('total_amount').innerHTML = "Total Amount " + total_amount;
+  }
+
+  // Change here: Use a loop to add event listener to all elements with the "btn" class
+  const buttonHandlers = document.getElementsByClassName("btn");
+  for (let i = 0; i < buttonHandlers.length; i++) {
+    buttonHandlers[i].addEventListener('click', () => {
+      window.location.href = "../sample/index.html";
+    });
+  }
+</script>
+
+</body>
+
 </html>

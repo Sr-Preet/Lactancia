@@ -12,5 +12,5 @@
   "dependencies": {
     "json-server": "^0.17.4"
   },
-  "description": "Install required packages with command - npm i"
+  "description": "#### Install required packages with command - npm i"
 }
